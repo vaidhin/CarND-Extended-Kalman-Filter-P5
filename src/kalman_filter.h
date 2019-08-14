@@ -63,6 +63,11 @@ public:
    * @param z The measurement at k+1
    */
   void UpdateEKF(const Eigen::VectorXd &z);
+  
+  /**
+   * Basic Kalman Filter 
+   */
+  void KF_basic(const Eigen::VectorXd &y);
 
 };
 
