@@ -102,7 +102,7 @@ Below are the files that includes my work regarding this project. Rest of the pr
 3. Then comes the measurement update step. If the readings comes from the laser sensor we use standard Kaman filter equation. But if the reading comes from the radar then we have to use the extended Kalman filter.Extended means it is capable of handling more complex motion models and measurement models. 
 4. At this point we have two different readings for a same state, one is what we predicted, and other is what we observed from sensors.Since there is a bit of uncertainty associated with both predicted and observed readings, we will try to to estimate the best using these two readings and obtain final equations below.  
 
-     ![finaleqations](images/finaleqations.jpg)
+     ![finaleqations](Images/finaleqations.jpg)
 5.  Refer this [link](http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/) for detailed explanation on how to calculate(mathematical derivation) the predicted values, observed values and kalman gain.
 
 ## Hints and Tips!
