@@ -93,7 +93,16 @@ of CarND. If you are enrolled, see [the project resources page](https://classroo
 for instructions and the project rubric.
 
 ## Cpp files and function flowchart 
-![Function Flowchart](Images/Functionflowmap.jpg)
+Below are the files that includes my work regarding this project. Rest of the project code and data is provided by Udacity  
+![Function Flowchart](Images/Functionflowmap.jpg)  
+
+## Kalman filter -short description
+1. Whenever we receive a a measurement from radar or lidar, if it is first measurement then initialise the state covariance matrix. Otherwise predict the next state and update the covariance matrix.  
+2. For the process of prediction i.e transition from one state (at time t) to other (at time t+1) we use simple kinematic equations.  
+3. Then comes the measurement update step. If the readings comes from the laser sensor we use standard Kaman filter equation. But if the reading comes from the radar then we have to use the extended Kalman filter.Extended means it is capable of handling more complex motion models and measurement models. 
+4. At this point we have two different readings for a same state, one is what we predicted, and other is what we observed from sensors.Since there is a bit of uncertainty associated with both predicted and observed readings, we will try to to estimate the best using these two readings and obtain final equations below.  
+     ![image](images/finaleqations.jpg)
+5.  Refer this [link](http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/) for detailed explanation on how to calculate(mathematical derivation) the predicted values, observed values and kalman gain.
 
 ## Hints and Tips!
 
@@ -103,5 +112,7 @@ for instructions and the project rubric.
 
     + create an empty log file
     + remove write permissions so that the simulator can't write to log
- * Please note that the ```Eigen``` library does not initialize ```VectorXd``` or ```MatrixXd``` objects with zeros upon creation.
+ * Please note that the ```Eigen``` library does not initialize ```VectorXd``` or ```MatrixXd``` objects with zeros upon creation.  
+ ## Acknowledgements
+ Thank you so much to the Udacity for the simulator and starter code. A very special thanks to my project mentors and fellow classmates who have helped me with cpp code clarifications.
 
