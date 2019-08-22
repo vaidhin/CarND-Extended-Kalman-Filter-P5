@@ -93,7 +93,7 @@ of CarND. If you are enrolled, see [the project resources page](https://classroo
 for instructions and the project rubric.
 
 ## Cpp files and function flowchart 
-[Function Flowchart](/images/function flowmap.jpg)
+![Function Flowchart](/images/Functionflowmap.jpg)
 
 ## Hints and Tips!
 
